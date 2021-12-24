@@ -1,0 +1,87 @@
+
+/* fundo do menu drop-down */
+
+nav {
+    margin: auto;
+    width: 100%;    
+    padding: 15px;
+    display: flex;
+    background: #202020;    
+    }
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav ul {
+    float: left;
+    list-style: none;
+    margin: auto;
+    width: 50%;
+    position: relative;
+
+}
+
+/* fundo dos títulos */
+
+nav ul li {    
+    float: left;  
+    background: #202020;
+    margin: 0 5px;
+}
+
+/* texto */
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+/* cor ao passar o mouse em cima do título */
+
+nav ul li a:hover {
+    color: rgb(201, 201, 201); 
+}
+
+
+nav ul ul li a:hover {
+    color: rgb(201, 201, 201);
+    box-shadow: none;
+
+}
+
+nav ul ul {
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;        
+}
+
+nav ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;  
+
+}
+
+nav ul ul li
+{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul ul ul li
+{
+    position: relative;
+    top: -70px;
+    left: 100px;
+}
